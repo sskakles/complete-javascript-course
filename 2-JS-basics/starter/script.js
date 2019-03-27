@@ -68,31 +68,31 @@ logHi();
 //
 // Operator precedence
 //
-var now = 2018;
-var yearJohn = 1989;
-var fullAge = 18;
-
-var isFullAge = now - yearJohn >= fullAge;
-console.log(isFullAge);
-
+//var now = 2018;
+//var yearJohn = 1989;
+//var fullAge = 18;
 //
-// if then else and blah blah blah...and that terary thing
+//var isFullAge = now - yearJohn >= fullAge;
+//console.log(isFullAge);
 //
-var blah = 'blah';
-if (blah === 'blah') {
-	console.log('this was true');
-}
-
-var firstName = 'John';
-var age = 16;
-
-//var foo = age >= 18 ? 'yep' : 'nope';
-//console.log(foo);
-
-let foobar = (foo = (age >= 18 ? 'yep' : 'nope')) => {
-	console.log(foo);
-}
-foobar();
+////
+//// if then else and blah blah blah...and that terary thing
+////
+//var blah = 'blah';
+//if (blah === 'blah') {
+//	console.log('this was true');
+//}
+//
+//var firstName = 'John';
+//var age = 16;
+//
+////var foo = age >= 18 ? 'yep' : 'nope';
+////console.log(foo);
+//
+//let foobar = (foo = (age >= 18 ? 'yep' : 'nope')) => {
+//	console.log(foo);
+//}
+//foobar();
 
 //let logHi = (str = 'hi') => {
 //	console.log(str);
@@ -199,24 +199,31 @@ foobar();
 //
 // Objectds and methods
 //
-//var johnnie = {
-//	firstName: 'Johnnie',
-//	lastName: 'Walker',
-//	birthYear: 1842,
-//	family: ['Jose', 'Tito', 'Jameson', 'Jack'],
-//	job: 'drinker',
-//	isMarried: false,
-//	calcAge: function(birthYear) {
-//		return 2018 - birthYear;
-//	},
-//	calcAge2: function() {
-//		return 2018 - this.birthYear;
-//	},
-//	calcAge2: function() {
-//		this.age = 2018 - this.birthYear;
-//	}
-//};
-//
+var johnnie = {
+	firstName: 'Johnnie',
+	lastName: 'Walker',
+	birthYear: 1842,
+	family: ['Jose', 'Tito', 'Jameson', 'Jack'],
+	job: 'drinker',
+	isMarried: false,
+	calcAge: function(birthYear) {
+		return 2018 - birthYear;
+	},
+	calcAge2: function() {
+		return 2018 - this.birthYear;
+	},
+	calcAge2: function() {
+		this.age = 2018 - this.birthYear;
+	}
+};
+
+var mike = {
+	firstName: 'Mike',
+	lastName: 'HardLemonade',
+	birthYear: 1985
+}
+
+console.log(mike);
 //console.log(johnnie.calcAge(1990));
 //console.log(johnnie.calcAge2());
 //console.log(johnnie.age);
